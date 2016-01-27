@@ -1,0 +1,46 @@
+.text-default {
+	color: white;
+}
+
+.mypic {
+	text-align: center;
+}
+
+.socialbtns {
+	padding: 5px;
+}
+
+.navbar {
+	    margin-bottom: 0;
+}
+
+.navbar-nav {
+   float: none;
+   margin: 0;
+   margin-left: 40%;
+}
+
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.social-link {
+  color: black;
+}
+
+.bg {
+    margin-bottom: 0px;
+    background-image: url('../resources/greywhale.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 980px) {
+  body {
+    padding-top: 40px;
+    padding-bottom: 42px;
+  }
+}
