@@ -1,0 +1,34 @@
+{
+	"projects": [
+		{
+			"image": "http://lorempixel.com/300/300/technics",
+			"title": "imtitle",
+			"text": "imtext",
+			"href": "ref"
+		},
+		{
+			"image": "http://lorempixel.com/300/300/technics",
+			"title": "imtitle",
+			"text": "imtext",
+			"href": "ref"
+		},
+		{
+			"image": "http://lorempixel.com/300/300/technics",
+			"title": "imtitle",
+			"text": "imtext",
+			"href": "ref"
+		},
+		{
+			"image": "http://lorempixel.com/300/300/technics",
+			"title": "imtitle",
+			"text": "imtext",
+			"href": "ref"
+		},
+		{
+			"image": "http://lorempixel.com/300/300/technics",
+			"title": "imtitle",
+			"text": "imtext",
+			"href": "ref"
+		}
+	]
+}

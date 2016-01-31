@@ -32,21 +32,37 @@
 
 .bg {
     margin-bottom: 0px;
-    background-image: url('../resources/greywhale.jpg');
+    background-image: url('../resources/backgroundjumbo.jpg');
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#slides_control > div{
-  height: 200px;
+.jumbo-text {
+  text-shadow: 2px 2px #aaaaaa;
 }
-#slides_control {
-  position:absolute;
-  width: 400px;
-  left:50%;
-  top:20px;
- margin-left:-200px;
+
+.project-images {
+  display: inline-block;
+  text-align: center;
+}
+
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin: auto;
+}
+
+.project-item {
+  margin: 15px;
+  padding-bottom: 20px;
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
