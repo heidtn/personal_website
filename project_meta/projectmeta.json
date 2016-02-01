@@ -1,31 +1,31 @@
 {
 	"projects": [
 		{
-			"image": "http://lorempixel.com/300/300/technics",
-			"title": "imtitle",
-			"text": "imtext",
+			"image": "resources/templol.png",
+			"title": "Electrospinner",
+			"text": "This is a device known as an electrospinner that can be used to create artificial extracellular matrices (ECM) for growing cells.  I created this as an independent project after hearing about the high prices for ECM growth dishes",
 			"href": "ref"
 		},
 		{
-			"image": "http://lorempixel.com/300/300/technics",
-			"title": "imtitle",
-			"text": "imtext",
+			"image": "resources/templol.png",
+			"title": "This Website!",
+			"text": "This is a fully responsive website I built from scratch using Bootstrap, Angularjs, and nodejs",
 			"href": "ref"
 		},
 		{
-			"image": "http://lorempixel.com/300/300/technics",
-			"title": "imtitle",
-			"text": "imtext",
+			"image": "resources/templol.png",
+			"title": "Meteor Tracker",
+			"text": "This is code for a system of networked Raspberry Pis that use cameras to track and triangulate meteor trajectories as they hit the atmosphere.",
 			"href": "ref"
 		},
 		{
-			"image": "http://lorempixel.com/300/300/technics",
-			"title": "imtitle",
-			"text": "imtext",
+			"image": "resources/templol.png",
+			"title": "pyDataLearn",
+			"text": "This is a collection of Machine Learning algorithms for analyzing patterns in web based data.",
 			"href": "ref"
 		},
 		{
-			"image": "http://lorempixel.com/300/300/technics",
+			"image": "resources/templol.png",
 			"title": "imtitle",
 			"text": "imtext",
 			"href": "ref"

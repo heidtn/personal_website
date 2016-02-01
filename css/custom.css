@@ -38,6 +38,10 @@
     background-repeat: no-repeat;
 }
 
+.form-jumbo {
+  background-color: #dddddd;
+}
+
 .jumbo-text {
   text-shadow: 2px 2px #aaaaaa;
 }
@@ -60,9 +64,31 @@
     margin: auto;
 }
 
+div.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+}
+
+.cpation {
+  display: block;
+}
+
 .project-item {
   margin: 15px;
   padding-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+}
+
+.project-text {
+  min-height: 200px;
+}
+
+.contact-form {
+  padding-top: 100px;
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
