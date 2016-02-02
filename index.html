@@ -2,6 +2,8 @@
 <html ng-app="portfolioapp" lang="en">
   <head>
   	<!-- Hello! Welcome to my blog.  You are free to use work show here, but please credit me if you do so.  -->
+    <!-- While using Angularjs to load each section would be more effecient both with work and website load times, I've decided to code (mostly) raw HTML for the sake of transparency in my work -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +55,7 @@
   				<div class="col-md-8 text-center text-default jumbo-text">
     				<h1>Hello, world!</h1>
             <h2>Nathan Heidt</h2>
-    				<p>inventor, engineer, some guy</p>
+    				<p>inventor, engineer</p>
     			</div>
     			<div class="col-md-4">
             <div class="mypic">
@@ -94,7 +96,8 @@
     <div class="text-center row">
       <h1>Projects</h1>
       <div class="col-md-4 col-md-offset-4 text-muted">
-      <p>Here are a few things I've created over the years. (click the image to learn more)</p>
+        <p>Here are a few things I've created over the years.</p>
+        <p>(click the image to learn more)</p>
       </div>
     </div>
     <div ng-controller="portfolio_projects">
@@ -102,7 +105,7 @@
         <div ng-repeat="pr in projects" class="col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
           <div class="col-lg-4 col-md-4 col-sm-4 project-item">
             <a href="{{pr.href}}">
-              <img ng-src="{{pr.image}}" class="img-responsive project-image">
+              <img ng-src="{{pr.image}}" class="img-responsive project-images">
             </a>
             <h2 class="text-center">{{pr.title}}</h2>
             <p class="project-text">{{pr.text}}</p>
@@ -115,24 +118,46 @@
 
   <section>
     <div class="row">
-      <h1 class="text-center">Accolades and Involvements</h1>
-      <ul class="col-sm-offset-3 col-sm-6 list-group">
-        <li class="list-group-item">
-          <h3>Forbes 30 under 30</h3>
-        </li>
-        <li class="list-group-item">
-          <h3>Highway 1 Accelerator</h3>
-        </li>
-        <li class="list-group-item">
-          <h3>Brandery Incubator</h3>
-        </li>
-        <li class="list-group-item">
-          <h3>SXSW eco</h3>
-        </li>
-        <li class="list-group-item">
-          <h3>Some cincinnati award</h3>
-        </li>
-      </ul>
+      <h1 class="text-center section-headers">Skills and Tools</h1>
+      <div class="col-lg-6 col-lg-offset-3 table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th>Things I code</th>
+              <th>Things I know</th>
+              <th>Things I do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C</td>
+              <td>Autonomous Systems</td>
+              <td>*Nix</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Machine Learning</td>
+              <td>Git</td>
+            </tr>
+            <tr>
+              <td>C++</td>
+              <td>Data Analysis</td>
+              <td>Solidworks (3D modelling)</td>
+            </tr>
+            <tr>
+              <td>Javascript</td>
+              <td>Digital Signal Processing</td>
+              <td>Altium and Eagle (PCB design)</td>
+            </tr>
+            <tr>
+              <td>Assembly (Arm, thumb)</td>
+              <td>Robotics</td>
+              <td>Machining</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
     </div>
   </section>
 
@@ -141,7 +166,7 @@
     <div class="row">
       <div class="col-sm-3 col-md-3 col-lg-3 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
         <p>Click the button below to download my resume in PDF form</p>
-        <a href="" class="btn btn-primary" role="button">Download</a>
+        <a href="resources/resume.pdf" class="btn btn-primary" role="button" download>Download</a>
       </div>
     </div>
   </section> <!-- end resume -->
