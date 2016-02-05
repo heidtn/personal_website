@@ -47,34 +47,37 @@
 	</nav>
 
   <!-- contact form -->
-    <div class="jumbotron form-jumbo">
-      <div class = "row container contact-form">
-        <form class="form-horizontal col-sm-offset-4 col-md-offset-4 col-lg-offset-4" role="form" method="post" action="">
+    <div class="jumbotron form-jumbo bg">
+      <div class="row container">      
+        <h3 class = "row-centered col-md-8 col-md-offset-4">Need some work done or want to chat more?  Send me a message and I'll get back to you as soon as I can.</h3>
+      </div>
+      <div class = "row container contact-form row-centered">
+        <form class="form-horizontal col-sm-offset-1 col-md-offset-1 col-lg-offset-1" role="form" method="post" action="">
             <div class ="form-group">
-              <label for="name" class="col-sm-2 col-md-2 col-lg-2 control-label">Name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="John Doe" value="">
+              <label for="name" class="col-md-4 control-label">Name</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="name" placeholder="John Doe" value="">
               </div>
             </div>
 
             <div class ="form-group">
-              <label for="email" class="col-sm-2 control-label">Email</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" placeholder="example@domain.com" value="">
+              <label for="email" class="col-md-4 control-label">Email</label>
+              <div class="col-md-8">
+                <input type="email" class="form-control" name="email" placeholder="example@domain.com" value="">
               </div>
             </div>
 
             <div class ="form-group">
-              <label for="message" class="col-sm-2 control-label">Message</label>
-              <div class="col-sm-10">
+              <label for="message" class="col-md-4 control-label">Message</label>
+              <div class="col-md-8">
                 <textarea class="form-control" rows="4" name="message"></textarea>
               </div>
             </div>
 
             <div class ="form-group">
-              <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Answer to prove you're human" value="">
+              <label for="human" class="col-md-4 control-label">2 + 3 = ?</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="human" placeholder="Answer to prove you're human" value="">
               </div>
             </div>
 
@@ -89,6 +92,9 @@
       </div>
     </div> <!-- end contact form -->
 
+  <div class="col-md-12">
+    {{{message}}}
+  </div>
 
   <!-- jQuery -->
   <script src="bootstrap/js/jquery.js"></script>
