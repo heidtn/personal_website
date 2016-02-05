@@ -7,7 +7,7 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 var nodemailer = require("nodemailer");
 
-var transport = nodemailer.createTransport('***REMOVED***');
+var transport = nodemailer.createTransport(process.env.EMAILTPT);
 
 
 
