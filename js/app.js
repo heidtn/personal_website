@@ -2,7 +2,7 @@ var app = angular.module('portfolioapp', ['ui.bootstrap']);
 
 app.controller('portfolio_projects', function($scope, $http){
 
-  $http.get('../project_meta/projectmeta.json').success(function(data) {
+  $http.get('project_meta/projectmeta.json').success(function(data) {
      $scope.projects = data.projects;
      console.log($scope.projects);
   });
@@ -19,7 +19,8 @@ app.controller('blog_posts', function($scope, $http){
         date = "" + els[0] + "-" + els[1] + "-" + els[2];
         title = els.slice(3, els.length - 1).join(" ");
         console.log(title);
-        $scope.posts.push({"date": date, "title":title, "url": data[i]});
+        url = data[i].split('.')[0]
+        $scope.posts.push({"date": date, "title":title, "url": url});
      }
   });
 });
