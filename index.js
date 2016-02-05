@@ -7,8 +7,8 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 var nodemailer = require("nodemailer");
 
-var transport = nodemailer.createTransport('smtps://nwheidtemailhandler%40gmail.com:psrj1748-2446@smtp.gmail.com');
 
+var transport = nodemailer.createTransport(process.env.EMAILTPT);
 
 
 var app = express();
@@ -90,6 +90,6 @@ app.post('/connect', function (req, res) {
 	});		
 });
 
-app.listen(3000, function () {
+app.listen(8080, process.env.PRIVATEIP, function () {
   console.log('Example app listening on port 3000!');
 });
