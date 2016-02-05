@@ -5,6 +5,10 @@ var marked = require('marked');
 var hbs = require('hbs');
 var fs = require('fs');
 var bodyParser = require('body-parser');
+var nodemailer = require("nodemailer");
+
+var transport = nodemailer.createTransport('smtps://nwheidtemailhandler%40gmail.com:psrj1748-2446@smtp.gmail.com');
+
 
 
 var app = express();
@@ -24,9 +28,6 @@ app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
-
-app.use(express.json());       // to support JSON-encoded bodies
-app.use(express.urlencoded()); // to support URL-encoded bodies
 
 app.get('/', function (req, res) {
   res.render('index');
@@ -61,7 +62,32 @@ app.get('/connect', function (req, res) {
 
 app.post('/connect', function (req, res) {
   console.log(req.body);
-  res.render('connect');
+  if(req.body.name == "" || req.body.email == "" || req.body.message == "" || req.body.human == "")
+  {
+  	res.render('connect', {message:'<div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong>Please fill out all of the forms</strong></div>'});
+  }
+  if(req.body.human != '5')
+  {
+  	res.render('connect', {message:'<div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please prove you are human!</strong></div>'});
+  }
+
+  transport.sendMail({
+    from: req.body.name + " <" + req.body.email +" >", // sender address
+    to: "nathanielheidt@gmail.com", // list of receivers
+    subject: "New contact message from website", // Subject line
+    text: req.body.message // plaintext body
+	}, function(error, info){
+	  if(error){
+	      console.log('Error occured');
+	      console.log(error.message);
+	      res.render('connect', {message:'<div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> There was an error sending the email!</strong></div>'});
+	      return;
+	  }
+	  console.log('Message sent successfully!' + info.response);
+	  res.render('connect', {message:'<div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent.</strong></div>'});
+
+	  //transport.close(); // close the connection pool
+	});		
 });
 
 app.listen(3000, function () {
