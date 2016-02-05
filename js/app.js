@@ -17,8 +17,7 @@ app.controller('blog_posts', function($scope, $http){
      {
         els = data[i].split('/')[1].split('_');
         date = "" + els[0] + "-" + els[1] + "-" + els[2];
-        title = els.slice(3, els.length - 1).join(" ");
-        console.log(title);
+        title = els.slice(3, els.length).join(" ").replace('.md','');
         url = data[i].split('.')[0]
         $scope.posts.push({"date": date, "title":title, "url": url});
      }
