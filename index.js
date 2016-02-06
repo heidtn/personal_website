@@ -50,7 +50,7 @@ app.get('/posts/:id', function (req, res) {
 
 app.get('/get_blog_posts', function(req, res) {
 
-	glob("posts/*.md", function (er, files) {
+	glob("posts/!(p)*.md", function (er, files) {
 	  	
 	  res.json(files);
 	});
@@ -91,5 +91,5 @@ app.post('/connect', function (req, res) {
 });
 
 app.listen(8080, process.env.PRIVATEIP, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('Example app listening on port 8080');
 });

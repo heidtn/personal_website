@@ -33,9 +33,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="black">
+  <body>
 	<!-- site navigation -->
-	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-shrink">
+	<nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top navbar-shrink">
 			<div class="container">
         <div class="navbar-collapse">
 					<ul class="nav navbar-nav navbar-center">
@@ -52,7 +52,7 @@
     <div class="cssterm">
       
       Welcome to My Blog: END OF LINE 
-
+      <br><br>
         * Here I list my musings, thoughts, experiments, and creations for your amusement.  Enjoy!
         <br>
         System load:  0.0               Processes:           87
@@ -71,7 +71,7 @@
 
     <div ng-controller="blog_posts" class="col-lg-8 posts">
           <div ng-repeat="blg in posts">
-              <p class="text-default">\{{blg.date}}
+              <p>\{{blg.date}}
               <a href="\{{blg.url}}">\{{blg.title}}
               </a></p>
           </div>
