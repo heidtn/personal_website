@@ -9,14 +9,14 @@
 		{
 			"image": "resources/site_project.png",
 			"title": "This Website!",
-			"text": "This is a fully responsive website I built using Bootstrap, Angularjs, and nodejs",
-			"href": "ref"
+			"text": "This is a fully responsive website I built using Bootstrap, Angularjs, and nodejs.  I event have a custom blog built using packages like handlebars.",
+			"href": "/"
 		},
 		{
 			"image": "resources/meteor_proj.png",
 			"title": "Meteor Tracker",
 			"text": "This is code for a system of networked Raspberry Pis that use cameras to track and triangulate meteor trajectories as they hit the atmosphere.",
-			"href": "ref"
+			"href": "posts/16_2_6_Meteor_tracker_(part_1)"
 		},
 		{
 			"image": "resources/data_proj.png",
