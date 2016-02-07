@@ -84,16 +84,25 @@ div.item {
 }
 
 .project-item {
-  background-color: #cccccf;
-  margin: 15px;
+  /*background-color: #cccccf; */
+  margin: 15 auto 150px;
   padding-bottom: 20px;
-  display: inline-block;
+}
+
+.project-padding {
+  background-color: #cccccf;
   text-align: center;
-  width: 400px;
+  padding: 10px;
 }
 
 .project-text {
   min-height: 200px;
+}
+
+.project-collection {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
 }
 
 .contact-form {
