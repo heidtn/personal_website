@@ -4,7 +4,7 @@
 			"image": "resources/ecm_project.jpg",
 			"title": "Electrospinner",
 			"text": "This is a device known as an electrospinner that can be used to create artificial extracellular matrices (ECM) for growing cells.  I created this as an independent project after hearing about the high prices for ECM growth dishes",
-			"href": "ref"
+			"href": "/"
 		},
 		{
 			"image": "resources/site_project.png",
@@ -16,7 +16,7 @@
 			"image": "resources/meteor_proj.png",
 			"title": "Meteor Tracker",
 			"text": "This is code for a system of networked Raspberry Pis that use cameras to track and triangulate meteor trajectories as they hit the atmosphere.",
-			"href": "posts/16_2_6_Meteor_tracker_(part_1)"
+			"href": "http://endoftransmission.com/2016/02/19/meteor-tracker/"
 		},
 		{
 			"image": "resources/data_proj.png",
