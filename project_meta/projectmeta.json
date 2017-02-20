@@ -1,18 +1,6 @@
 {
 	"projects": [
 		{
-			"image": "resources/ecm_project.jpg",
-			"title": "Electrospinner",
-			"text": "This is a device known as an electrospinner that can be used to create artificial extracellular matrices (ECM) for growing cells.  I created this as an independent project after hearing about the high prices for ECM growth dishes",
-			"href": "/"
-		},
-		{
-			"image": "resources/site_project.png",
-			"title": "This Website!",
-			"text": "This is a fully responsive website I built using Bootstrap, Angularjs, and nodejs.  I event have a custom blog built using packages like handlebars.",
-			"href": "/"
-		},
-		{
 			"image": "resources/meteor_proj.png",
 			"title": "Meteor Tracker",
 			"text": "This is code for a system of networked Raspberry Pis that use cameras to track and triangulate meteor trajectories as they hit the atmosphere.",
@@ -21,8 +9,44 @@
 		{
 			"image": "resources/data_proj.png",
 			"title": "pyDataLearn",
-			"text": "This is a collection of Machine Learning algorithms for analyzing patterns in web based data.",
-			"href": "ref"
+			"text": "This is a collection of Machine Learning algorithms for analyzing patterns in web based data.  It is intended to be easy for a user to read and modify.",
+			"href": "https://github.com/heidtn/PyDataLearn"
+		},	
+		{
+			"image": "resources/fuego.png",
+			"title": "FUEGO",
+			"text": "I'm currently assisting in the design of machine learning algorithms for the FUEGO project that will be an early warning system for forest fires.",
+			"href": "http://fuego.ssl.berkeley.edu/"
+		},
+		{
+			"image": "resources/autonomous_arm.png",
+			"title": "Autonomous Robot Arm",
+			"text": "This is a robot arm that uses a ceiling mounted camera to detect and pick up different obects.  It is able to determine the type of object and the optimal orientation to pick it up.",
+			"href": "https://www.youtube.com/watch?v=PFbhYZxXZ_o"
+		},
+		{
+			"image": "resources/quadruped.jpg",
+			"title": "Quadruped",
+			"text": "This ROS based quadruped is capable of gait locomotion, localization using monocular egomotion, and sparse monocular SLAM.",
+			"href": "http://www.github.com/heidtn/quadquad"
+		},
+		{
+			"image": "resources/fusor.jpg",
+			"title": "Nuclear Fusor",
+			"text": "Here is a fusion capable reactor I built to learn more about plasmas and nuclear fusion.",
+			"href": "http://endoftransmission.com/2016/03/10/making-a-star-in-a-jar/"
+		},
+		{
+			"image": "resources/ecm_project.jpg",
+			"title": "Electrospinner",
+			"text": "This is a device known as an electrospinner that can be used to create artificial extracellular matrices (ECM) for growing cells.  I created this as an independent project after hearing about the high prices for ECM growth dishes.",
+			"href": "/"
+		},
+		{
+			"image": "resources/site_project.png",
+			"title": "This Website!",
+			"text": "This is a fully responsive website I built using Bootstrap, Angularjs, and nodejs.  I even have a custom blog built using packages like handlebars.",
+			"href": "/"
 		}
 	]
 }
